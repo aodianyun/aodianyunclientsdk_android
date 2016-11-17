@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放地址" />
+
+        <EditText
+            android:id="@+id/editText_play_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缓冲" />
+
+        <EditText
+            android:id="@+id/editText_buffersize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="8"
+            android:inputType="number"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最大缓冲" />
+
+        <EditText
+            android:id="@+id/editText_maxbuffersize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="8"
+            android:inputType="number"
+            android:singleLine="true" />
+        <CheckBox
+            android:id="@+id/checkBox_play_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日志" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run LivePlayer Demo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布地址" />
+
+        <EditText
+            android:id="@+id/editText_pub_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run LiveEncoder Demo" />
+
+    <TextView
+        android:id="@+id/textView4"
+         android:layout_marginTop="30dp" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多播测试" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run NodePlayer Demo" />
+
+</LinearLayout>
